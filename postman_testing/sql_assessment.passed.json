@@ -1,0 +1,1171 @@
+{
+	"id": "b78fe484-e254-4256-a841-86fab9e2447b",
+	"name": "sql_assessment",
+	"allTests": [],
+	"timestamp": "2018-04-01T21:56:54.620Z",
+	"collection_id": "4d9c1c53-09c0-4c01-ab22-43d4436da6c0",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "4d9c1c53-09c0-4c01-ab22-43d4436da6c0",
+		"name": "sql_assessment",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"2bad57c2-b299-4b0d-b0b5-20ff48ec69fd",
+			"4de63edc-ba90-40f1-8aa6-5cf633f677be",
+			"f8593370-4257-40b7-8429-1c4666025ed4",
+			"d83129cf-32c7-4e6e-99d2-842ac7c1f37b",
+			"d185fc08-5f0a-46f5-938a-16689142c28d",
+			"78e436ac-aef7-4add-9459-058e520f241b",
+			"25c33f09-c6f5-4040-9b08-eb33eda599d7",
+			"ac23a221-0a18-40ed-9512-c97957f57723",
+			"a6c12968-717e-4447-acfa-608b94fffe20",
+			"f86b9136-413b-4edc-9142-d3fe350ebca5",
+			"50c89c79-df58-4749-88b4-98b2e9a4cf28",
+			"56787320-5aa7-4726-804a-aef3404f9036",
+			"eaa99848-8720-4a3d-b4b9-1b37202c7319",
+			"968a77b9-a39c-4b49-ad2a-2af225dd39bc",
+			"9581b47d-5121-4eeb-935a-1a56f6181d7c",
+			"cf9f3550-f20e-4417-9bfd-63be19bff50d",
+			"cac2fc84-5f4c-4bb1-b4af-04d74c75a96a",
+			"908edee3-6126-43a9-bd13-3cfcbe9b92a7"
+		],
+		"folders_order": [],
+		"owner": "3643406",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "data_length",
+			"value": "3",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "productID_0",
+			"value": "4",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "productID_1",
+			"value": "5",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "productID_2",
+			"value": "6",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "username",
+			"value": "user 0",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "total",
+			"value": "0",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "item0",
+			"value": "{\"id\":1,\"title\":\"Snapback ( red )\",\"category\":\"hats\",\"price\":10}",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "item1",
+			"value": "{\"id\":2,\"title\":\"Snapback ( blue )\",\"category\":\"hats\",\"price\":10}",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "users",
+			"value": "[{\"id\":1,\"name\":\"John Smith\",\"email\":\"John@Smith.com\"},{\"id\":2,\"name\":\"Dave Davis\",\"email\":\"Dave@Davis.com\"},{\"id\":3,\"name\":\"Jane Janis\",\"email\":\"Jane@Janis.com\"}]",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "vehicles",
+			"value": "[{\"id\":1,\"make\":\"Toyota\",\"model\":\"Camry\",\"year\":1991,\"owner_id\":1},{\"id\":2,\"make\":\"Honda\",\"model\":\"Civic\",\"year\":1995,\"owner_id\":1},{\"id\":3,\"make\":\"Ford\",\"model\":\"Focus\",\"year\":2005,\"owner_id\":1},{\"id\":4,\"make\":\"Ford\",\"model\":\"Taurus\",\"year\":2003,\"owner_id\":2},{\"id\":5,\"make\":\"VW\",\"model\":\"Bug\",\"year\":2010,\"owner_id\":2},{\"id\":6,\"make\":\"Mini\",\"model\":\"Cooper\",\"year\":2013,\"owner_id\":3}]",
+			"enabled": true,
+			"type": "text"
+		}
+	],
+	"results": [
+		{
+			"name": "GET - All Users -  #1",
+			"id": "2bad57c2-b299-4b0d-b0b5-20ff48ec69fd",
+			"url": "localhost:3000/api/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Array of all user objects returned",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Array of all user objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"525"
+			],
+			"allTests": [
+				{
+					"Array of all user objects returned": true
+				}
+			],
+			"time": "525",
+			"totalRequestTime": "525",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - All Vehicles - #2",
+			"id": "4de63edc-ba90-40f1-8aa6-5cf633f677be",
+			"url": "localhost:3000/api/vehicles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Array of vehicle objects returned",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Array of vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Array of vehicle objects returned": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST - Add User - #3",
+			"id": "f8593370-4257-40b7-8429-1c4666025ed4",
+			"url": "localhost:3000/api/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "User object added to users table AND returned",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"User object added to users table AND returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"101"
+			],
+			"allTests": [
+				{
+					"User object added to users table AND returned": true
+				}
+			],
+			"time": "101",
+			"totalRequestTime": "101",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST - Add Vehicle - #4",
+			"id": "d83129cf-32c7-4e6e-99d2-842ac7c1f37b",
+			"url": "localhost:3000/api/vehicles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Vehicle object added AND returned",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Vehicle object added AND returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"74"
+			],
+			"allTests": [
+				{
+					"Vehicle object added AND returned": true
+				}
+			],
+			"time": "74",
+			"totalRequestTime": "74",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Count Of Cars By Id - #5",
+			"id": "d185fc08-5f0a-46f5-938a-16689142c28d",
+			"url": "localhost:3000/api/user/1/vehiclecount",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Correct count returned for user",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Correct count returned for user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Correct count returned for user": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Count Of Cars By Id - #5",
+			"id": "78e436ac-aef7-4add-9459-058e520f241b",
+			"url": "localhost:3000/api/user/2/vehiclecount",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Correct count returned for user",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Correct count returned for user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"75"
+			],
+			"allTests": [
+				{
+					"Correct count returned for user": true
+				}
+			],
+			"time": "75",
+			"totalRequestTime": "75",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Vehicles By User Id - #6",
+			"id": "25c33f09-c6f5-4040-9b08-eb33eda599d7",
+			"url": "localhost:3000/api/user/2/vehicle",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Only vehicle information returned, no user info",
+				"status": "pass",
+				"Correct array of vehicle objects returned": true
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct array of vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"69"
+			],
+			"allTests": [
+				{
+					"Only vehicle information returned, no user info": true,
+					"Correct array of vehicle objects returned": true
+				}
+			],
+			"time": "69",
+			"totalRequestTime": "69",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Vehicles By Email - #7",
+			"id": "ac23a221-0a18-40ed-9512-c97957f57723",
+			"url": "localhost:3000/api/vehicle?userEmail=john@smith.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Only vehicle information returned, no user info",
+				"status": "pass",
+				"Correct vehicle objects returned": true
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"78"
+			],
+			"allTests": [
+				{
+					"Only vehicle information returned, no user info": true,
+					"Correct vehicle objects returned": true
+				}
+			],
+			"time": "78",
+			"totalRequestTime": "78",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Vehicles By Email - #7",
+			"id": "a6c12968-717e-4447-acfa-608b94fffe20",
+			"url": "localhost:3000/api/vehicle?userEmail=dave@davis.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Only vehicle information returned, no user info",
+				"status": "pass",
+				"Correct vehicle objects returned": true
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"72"
+			],
+			"allTests": [
+				{
+					"Only vehicle information returned, no user info": true,
+					"Correct vehicle objects returned": true
+				}
+			],
+			"time": "72",
+			"totalRequestTime": "72",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Vehicles By Letters - #8",
+			"id": "f86b9136-413b-4edc-9142-d3fe350ebca5",
+			"url": "localhost:3000/api/vehicle?userFirstStart=Jo",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Only vehicle information returned, no user info",
+				"status": "pass",
+				"Vehicles returned based on letters \"Jo\"": true
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Vehicles returned based on letters \"Jo\"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Only vehicle information returned, no user info": true,
+					"Vehicles returned based on letters \"Jo\"": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Vehicles By Letters - #8",
+			"id": "50c89c79-df58-4749-88b4-98b2e9a4cf28",
+			"url": "localhost:3000/api/vehicle?userFirstStart=Da",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Only vehicle information returned, no user info",
+				"status": "pass",
+				"Vehicles returned based on letters \"Da\"": true
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Vehicles returned based on letters \"Da\"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"74"
+			],
+			"allTests": [
+				{
+					"Only vehicle information returned, no user info": true,
+					"Vehicles returned based on letters \"Da\"": true
+				}
+			],
+			"time": "74",
+			"totalRequestTime": "74",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET - Vehicles By Year - #9",
+			"id": "56787320-5aa7-4726-804a-aef3404f9036",
+			"url": "localhost:3000/api/newervehiclesbyyear",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Vehilcle owner's name (only) included with vehicle info",
+				"status": "pass",
+				"Correct vehicles returned, newer than 2000": true
+			},
+			"testPassFailCounts": {
+				"Vehilcle owner's name (only) included with vehicle info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct vehicles returned, newer than 2000": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Vehilcle owner's name (only) included with vehicle info": true,
+					"Correct vehicles returned, newer than 2000": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT - Update Vehicle Owner - #10",
+			"id": "eaa99848-8720-4a3d-b4b9-1b37202c7319",
+			"url": "localhost:3000/api/vehicle/2/user/3",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Updated owner on vehicle object",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Updated owner on vehicle object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Updated owner on vehicle object": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT - Update Vehicle Owner - #10",
+			"id": "968a77b9-a39c-4b49-ad2a-2af225dd39bc",
+			"url": "localhost:3000/api/vehicle/1/user/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Updated owner on vehicle object",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Updated owner on vehicle object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Updated owner on vehicle object": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE - Remove Ownership - #11",
+			"id": "9581b47d-5121-4eeb-935a-1a56f6181d7c",
+			"url": "localhost:3000/api/user/1/vehicle/3",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Owner removed from correct vehicle",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Owner removed from correct vehicle": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"80"
+			],
+			"allTests": [
+				{
+					"Owner removed from correct vehicle": true
+				}
+			],
+			"time": "80",
+			"totalRequestTime": "80",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE - Remove Ownership - #11",
+			"id": "cf9f3550-f20e-4417-9bfd-63be19bff50d",
+			"url": "localhost:3000/api/user/2/vehicle/5",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Owner removed from correct vehicle",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Owner removed from correct vehicle": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"75"
+			],
+			"allTests": [
+				{
+					"Owner removed from correct vehicle": true
+				}
+			],
+			"time": "75",
+			"totalRequestTime": "75",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE - Vehicle By Id - #12",
+			"id": "cac2fc84-5f4c-4bb1-b4af-04d74c75a96a",
+			"url": "localhost:3000/api/vehicle/6",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Correct vehicle deleted",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Correct vehicle deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"72"
+			],
+			"allTests": [
+				{
+					"Correct vehicle deleted": true
+				}
+			],
+			"time": "72",
+			"totalRequestTime": "72",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE - Vehicle By Id - #12",
+			"id": "908edee3-6126-43a9-bd13-3cfcbe9b92a7",
+			"url": "localhost:3000/api/vehicle/4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Correct vehicle deleted",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Correct vehicle deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"73"
+			],
+			"allTests": [
+				{
+					"Correct vehicle deleted": true
+				}
+			],
+			"time": "73",
+			"totalRequestTime": "73",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 24,
+	"totalFail": 0,
+	"totalTime": 1806,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "GET - All Users -  #1",
+			"id": "2bad57c2-b299-4b0d-b0b5-20ff48ec69fd",
+			"url": "localhost:3000/api/users",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Array of all user objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - All Vehicles - #2",
+			"id": "4de63edc-ba90-40f1-8aa6-5cf633f677be",
+			"url": "localhost:3000/api/vehicles",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Array of vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST - Add User - #3",
+			"id": "f8593370-4257-40b7-8429-1c4666025ed4",
+			"url": "localhost:3000/api/users",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"User object added to users table AND returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST - Add Vehicle - #4",
+			"id": "d83129cf-32c7-4e6e-99d2-842ac7c1f37b",
+			"url": "localhost:3000/api/vehicles",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Vehicle object added AND returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Count Of Cars By Id - #5",
+			"id": "d185fc08-5f0a-46f5-938a-16689142c28d",
+			"url": "localhost:3000/api/user/1/vehiclecount",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Correct count returned for user": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Count Of Cars By Id - #5",
+			"id": "78e436ac-aef7-4add-9459-058e520f241b",
+			"url": "localhost:3000/api/user/2/vehiclecount",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Correct count returned for user": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Vehicles By User Id - #6",
+			"id": "25c33f09-c6f5-4040-9b08-eb33eda599d7",
+			"url": "localhost:3000/api/user/2/vehicle",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct array of vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Vehicles By Email - #7",
+			"id": "ac23a221-0a18-40ed-9512-c97957f57723",
+			"url": "localhost:3000/api/vehicle?userEmail=john@smith.com",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Vehicles By Email - #7",
+			"id": "a6c12968-717e-4447-acfa-608b94fffe20",
+			"url": "localhost:3000/api/vehicle?userEmail=dave@davis.com",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct vehicle objects returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Vehicles By Letters - #8",
+			"id": "f86b9136-413b-4edc-9142-d3fe350ebca5",
+			"url": "localhost:3000/api/vehicle?userFirstStart=Jo",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Vehicles returned based on letters \"Jo\"": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Vehicles By Letters - #8",
+			"id": "50c89c79-df58-4749-88b4-98b2e9a4cf28",
+			"url": "localhost:3000/api/vehicle?userFirstStart=Da",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Only vehicle information returned, no user info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Vehicles returned based on letters \"Da\"": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET - Vehicles By Year - #9",
+			"id": "56787320-5aa7-4726-804a-aef3404f9036",
+			"url": "localhost:3000/api/newervehiclesbyyear",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Vehilcle owner's name (only) included with vehicle info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct vehicles returned, newer than 2000": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT - Update Vehicle Owner - #10",
+			"id": "eaa99848-8720-4a3d-b4b9-1b37202c7319",
+			"url": "localhost:3000/api/vehicle/2/user/3",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Updated owner on vehicle object": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT - Update Vehicle Owner - #10",
+			"id": "968a77b9-a39c-4b49-ad2a-2af225dd39bc",
+			"url": "localhost:3000/api/vehicle/1/user/2",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Updated owner on vehicle object": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE - Remove Ownership - #11",
+			"id": "9581b47d-5121-4eeb-935a-1a56f6181d7c",
+			"url": "localhost:3000/api/user/1/vehicle/3",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Owner removed from correct vehicle": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE - Remove Ownership - #11",
+			"id": "cf9f3550-f20e-4417-9bfd-63be19bff50d",
+			"url": "localhost:3000/api/user/2/vehicle/5",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Owner removed from correct vehicle": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE - Vehicle By Id - #12",
+			"id": "cac2fc84-5f4c-4bb1-b4af-04d74c75a96a",
+			"url": "localhost:3000/api/vehicle/6",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Correct vehicle deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE - Vehicle By Id - #12",
+			"id": "908edee3-6126-43a9-bd13-3cfcbe9b92a7",
+			"url": "localhost:3000/api/vehicle/4",
+			"time": "2018-04-01T21:56:54.620Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Correct vehicle deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
